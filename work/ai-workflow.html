@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The AI developer workflow · Daniel Terwilliger</title>
+<meta name="description" content="Case study: a human-in-the-loop AI workflow turning meetings into managed Jira work, plus the workshops that spread AI practice across the company.">
+<link rel="canonical" href="https://danielterwilliger.com/work/ai-workflow.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="wordmark" href="/">Daniel&nbsp;Terwilliger</a>
+    <nav class="site-nav">
+      <a href="/work/">Work</a>
+      <a href="/about/">About</a>
+      <a href="mailto:daniel.terwil@gmail.com">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="case">
+  <div class="wrap">
+    <a class="crumb" href="/work/#case-studies">← All case studies</a>
+    <span class="kicker">Case study · eXp Realty</span>
+    <h1>The AI developer workflow: meetings in, managed work out</h1>
+    <p class="era">Product Manager — AI &amp; Enterprise Platforms · May 2023 – May 2026</p>
+
+    <h2>The problem</h2>
+    <p>Our project manager was promoted to portfolio manager, teams moved to pods, and everyone was pushed to be more independent. So the planning was me: the project-management work, the status reporting, the risk tracking, on top of the product role itself. Meanwhile ten years of platform history sat scattered across Jira, Confluence, Coda, and Google Drive.</p>
+
+    <h2>What I built</h2>
+    <p>A pipeline that turned conversations into managed work, with a human making every call:</p>
+    <ul>
+      <li><strong>Meetings to backlog:</strong> every meeting transcribed (Google's own transcription proved the most reliable path, landing right in Calendar where a CLI agent could reach it), fed to the best model available with full context, and tapped into Jira through the Atlassian tooling to draft issues automatically for triage.</li>
+      <li><strong>Refinement with humans in the loop:</strong> a first refining pass with me and the agent iterating over the issues, then real refinement calls with the engineering team, transcribed, and the same loop again for story points, notes, and comments. The human decides what gets updated. Real people having real conversations at every step kept it grounded.</li>
+      <li><strong>Planning and reporting:</strong> weekly planning as a sit-down session with my artifacts and AI; a priority document senior leadership reviewed, holding both the stakeholders' priorities and mine, including technical debt from the engineers; weekly highlights, lowlights, and blockers sourced from recorded standups, AI-written and curated where it used to be manual.</li>
+      <li><strong>Stories written in service of tests:</strong> QA ran a system that generated test cases straight from user stories, so my workflow wrote stories shaped for it. I verified every AI-refined story before it moved.</li>
+      <li><strong>Honest engineering:</strong> plenty of failed experiments along the way. The Atlassian CLI and the MCP server each had tools the other lacked and each could blow up context limits; asynchronous refinement lost to actually talking to people. What survived is what worked.</li>
+    </ul>
+
+    <h2>Spreading it</h2>
+    <p>I ran one-on-one and group workshops across the company: teaching teams to put AI in their terminals with the Gemini CLI, setting up a production-support member to triage incidents against Datadog, and running a session for the Mendix engineers that introduced them to the Mendix MCP server. I also ran and contributed to cross-team sessions on what AI is actually good for, from roadmapping to architecture to planning.</p>
+
+    <h2>Outcome</h2>
+    <p>By the time I left, the organization was migrating the whole product team to a consistent markdown format for writing user stories with AI. I feel like I influenced the standard that's set at the organization today. A working, public version of the same practice lives at <a href="https://github.com/danielterwilliger/ai-oncall">github.com/danielterwilliger/ai-oncall</a>.</p>
+
+    <p class="stack-line"><strong>Stack:</strong> OpenAI Codex CLI · Gemini CLI · Claude · Atlassian APIs &amp; MCP · Jira · Confluence · Coda · Slack · Datadog</p>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>© 2026 Daniel C. Terwilliger</span>
+    <span><a href="mailto:daniel.terwil@gmail.com">daniel.terwil@gmail.com</a> · <a href="https://www.linkedin.com/in/danielterwil">LinkedIn</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

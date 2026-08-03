@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>eXp INBND — AI-supported call centre · Daniel Terwilliger</title>
+<meta name="description" content="Case study: eXp INBND, an AI-supported call-centre application that increased call-handling capacity over 80% for 150+ agents handling 24,000+ inbound hours monthly.">
+<link rel="canonical" href="https://danielterwilliger.com/work/inbnd.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="wordmark" href="/">Daniel&nbsp;Terwilliger</a>
+    <nav class="site-nav">
+      <a href="/work/">Work</a>
+      <a href="/about/">About</a>
+      <a href="mailto:daniel.terwil@gmail.com">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="case">
+  <div class="wrap">
+    <a class="crumb" href="/work/#case-studies">← All case studies</a>
+    <span class="kicker">Case study · eXp Realty</span>
+    <h1>eXp INBND — an AI-supported call centre, built from a phone-system cleanup</h1>
+    <p class="era">Senior IT → Business Analyst → Product Manager · shipped and evolved 2022–2024</p>
+
+    <div class="stats">
+      <div><span class="n">+80%</span><br><span class="l">call-handling capacity</span></div>
+      <div><span class="n">24,000+</span><br><span class="l">inbound hours monthly</span></div>
+      <div><span class="n">150+</span><br><span class="l">call agents supported</span></div>
+    </div>
+
+    <h2>The problem</h2>
+    <p>eXp's phone presence had grown one account at a time: over a hundred disparate RingCentral and other VoIP accounts — at least one per state and province, often several (California alone had six or seven; the city of Seattle had three). Inbound calls routinely went to voicemail or went unanswered entirely. State brokers had official numbers that callers were dialing — and the calls simply weren't arriving. It was a dead zone.</p>
+
+    <h2>What I did</h2>
+    <p>The original task handed to me was operational: "cancel these accounts and get them all into Twilio." I turned that project into a product. I owned the roadmap from Jira epic down to individual user stories, designed the call flows, handled the account-by-account porting — keeping everybody connected while numbers moved — and personally coordinated the rollout to staff. The project needed a name, so I gave it one: INBND.</p>
+    <ul>
+      <li><strong>Stood up an actual call centre</strong> — staffing and everything — where none had existed. More than half of the 150+ agents on the system were new to phone support; we grew to that size because the recovered call volume demanded triage.</li>
+      <li><strong>Call recognition and routing:</strong> callers could name the listing they were looking for, and the system would look it up in eXp's listings database and present basic information — speech recognition, ZIP-code matching, and smart lookup via API.</li>
+      <li><strong>AI support for the agents, not just the callers:</strong> when a call came in, the system summarized what HubSpot already knew about the caller — who they are, what they previously called about — so the agent started the conversation informed. Built on the OpenAI API, added iteratively in the year after launch.</li>
+      <li><strong>Technical leadership by example:</strong> I prototyped Twilio Studio Flows as AI-generated architecture documents to show the team we could generate call flows rather than hand-build them.</li>
+    </ul>
+
+    <h2>Outcome</h2>
+    <p>Measured roughly six months after adoption — enough time for the team to ramp — call handling was 80% higher than the cumulative total across all the old accounts, verified against vendor bills on one side and the Twilio console plus a team-built dashboard on the other. The system settled at 24,000+ inbound hours monthly. And the difference was visible in the business: state brokers started receiving the call volume that had always been intended for them — to the point where some had to hire staff to handle it.</p>
+
+    <h2>Adoption: measured the hard way</h2>
+    <p>The flip side is what happens after release. INBND is also where I learned to measure adoption against reality: roughly six months after launch, call handling was 80% higher than the cumulative total across all the old accounts, verified from vendor bills on one side and the Twilio console plus our own dashboard on the other. The change was visible in the business. State brokers finally received the call volume that had always been meant for them, to the point where some hired staff to handle it. And the intake process I built for one team spread across the organization on its own: Legal, Accounting, and every team doing solution delivery ended up running their intake through it. Products earn adoption when they live inside a workflow. I've watched it happen and I've watched it not happen, and I know which decisions made the difference.</p>
+
+    <p class="stack-line"><strong>Stack:</strong> Twilio (Studio Flows) · HubSpot · OpenAI API · Jira</p>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>© 2026 Daniel C. Terwilliger</span>
+    <span><a href="mailto:daniel.terwil@gmail.com">daniel.terwil@gmail.com</a> · <a href="https://www.linkedin.com/in/danielterwil">LinkedIn</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

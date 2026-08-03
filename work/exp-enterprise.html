@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>eXp Enterprise — the system of record · Daniel Terwilliger</title>
+<meta name="description" content="Case study: directing eXp Enterprise, the Mendix system of record for agent data across the U.S. and Canada on a Kafka and AWS backbone.">
+<link rel="canonical" href="https://danielterwilliger.com/work/exp-enterprise.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="wordmark" href="/">Daniel&nbsp;Terwilliger</a>
+    <nav class="site-nav">
+      <a href="/work/">Work</a>
+      <a href="/about/">About</a>
+      <a href="mailto:daniel.terwil@gmail.com">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="case">
+  <div class="wrap">
+    <a class="crumb" href="/work/#case-studies">← All case studies</a>
+    <span class="kicker">Case study · eXp Realty</span>
+    <h1>eXp Enterprise: piloting the system of record</h1>
+    <p class="era">Product Manager — AI &amp; Enterprise Platforms · May 2023 – May 2026</p>
+
+    <h2>What it was</h2>
+    <p>eXp Enterprise was the source of truth for agent data at eXp: financial, demographic, and licence. When an agent joined the company, everything they reported on the join form eventually ended up there, including the most important part, their real estate licence. It held a record for every agent in the U.S. and Canada, built in Mendix on a Kafka and AWS backbone, and dozens of systems consumed its data downstream, including single sign-on and the company's data platform.</p>
+    <p>Enterprise wasn't just a communicator. It was an application people did work in, and an agent needed their licence transferred there in order to get paid. When Enterprise was down, it was an entire company event.</p>
+
+    <h2>What I did</h2>
+    <blockquote class="pull">I was in charge of the direction of Enterprise. A lot of stakeholders to answer to, a lot of different winds blowing, but I was captain of the ship. All the problems came to me, and all the questions came to me, as we moved forward.</blockquote>
+    <ul>
+      <li><strong>Owned the direction of a ten-year-old platform.</strong> It didn't need a sharp pivot; it needed someone to stop the ship from falling apart while pointing it somewhere. Roadmap three months out, a real intake process, and prioritization that held under executive pressure.</li>
+      <li><strong>Ran the permission structure end to end:</strong> SOC 2 compliant, FINTRAC compliant for Canada, aligned with the IAM team's job-duty matrices, and auditable every time a role changed.</li>
+      <li><strong>Owned the Kafka side:</strong> topics and schemas, plus the contract negotiations with every consuming application that depended on them.</li>
+      <li><strong>Financial operations:</strong> W-2 collection, pay plans that varied by agent situation, and the licence-to-payment flows the business ran on.</li>
+      <li><strong>Led without authority:</strong> after budget cuts the team was me, a portfolio manager, a QA lead, and seven or eight developers. Nobody reported to me, but I got answers for people, gave guidance including technical guidance, and sat in on code reviews.</li>
+      <li><strong>Picked my battles with the platform:</strong> Mendix defaults were easy wins; anything unique cost technical debt. Knowing which compromises to take, especially on UI, was product judgment as much as engineering.</li>
+      <li><strong>Used AI as institutional memory:</strong> ten years of history scattered across Jira, Confluence, Coda, and Google Drive. AI retrieval became essential for impact analysis, for finding how things connected, and for surfacing what mattered in a feature presentation.</li>
+    </ul>
+
+    <h2>Outcome</h2>
+    <p>Three years of stability and direction for the platform the whole company depended on, with a compliance posture that survived audits and a downstream ecosystem that kept its contracts. The last feature I delivered on it, <a href="custom-agent-flags.html">Custom Agent Flags</a>, closed one of its longest-standing gaps.</p>
+
+    <p class="stack-line"><strong>Stack:</strong> Mendix · Kafka · AWS · Okta · Jira · Confluence</p>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>© 2026 Daniel C. Terwilliger</span>
+    <span><a href="mailto:daniel.terwil@gmail.com">daniel.terwil@gmail.com</a> · <a href="https://www.linkedin.com/in/danielterwil">LinkedIn</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Custom Agent Flags → Tableau · Daniel Terwilliger</title>
+<meta name="description" content="Case study: Custom Agent Flags — configurable agent metadata on the enterprise system of record, flowing through custom Kafka topics into searchable Tableau views.">
+<link rel="canonical" href="https://danielterwilliger.com/work/custom-agent-flags.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="wordmark" href="/">Daniel&nbsp;Terwilliger</a>
+    <nav class="site-nav">
+      <a href="/work/">Work</a>
+      <a href="/about/">About</a>
+      <a href="mailto:daniel.terwil@gmail.com">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="case">
+  <div class="wrap">
+    <a class="crumb" href="/work/#case-studies">← All case studies</a>
+    <span class="kicker">Case study · eXp Realty</span>
+    <h1>Custom Agent Flags: letting the business say anything about any agent</h1>
+    <p class="era">Product Manager — AI &amp; Enterprise Platforms · delivered May 2026</p>
+
+    <h2>The problem</h2>
+    <p>eXp Enterprise is the system of record for all agent data across the U.S. and Canada — but the record could only say what its schema anticipated. Departments across the company needed to say something about an agent that wasn't within the regular scope: which agents belong to the company's agent networks (the eXp Pride Network, the Black eXp Network, the eXp Military Network), which agents are in the luxury program with its entirely separate vendors and partners, and dozens of department-specific distinctions — each needing reporting, and each needing to reach the analytics stack. It was a long-standing gap between the agent record and the vendors and systems downstream of it, and the feature was widely requested — from outside vendors to sister subsidiaries to teams running the internal networks.</p>
+
+    <h2>What I did</h2>
+    <ul>
+      <li><strong>Made flags configurable, not schema-bound:</strong> the point was that you could be custom — create your own flag, indicate which agents it applies to, and have downstream applications consume it. Control panels built in Mendix on eXp Enterprise.</li>
+      <li><strong>Designed the pipeline leg I owned:</strong> everything was designed around generating custom Kafka topics and ensuring they reached the Data Services team — who carried the data into Tableau, where the business gets clean, searchable views across multiple streams of agent data.</li>
+      <li><strong>Ran the UAT myself:</strong> a live walkthrough with stakeholders — the control panels, the areas you can configure, how it communicates downstream to Data Services, what it looks like end to end. It was a great success.</li>
+    </ul>
+
+    <h2>Outcome</h2>
+    <p>Delivered May 2026, tested end to end, into visible demand: multiple project epics across different teams were queued on this feature in Jira, waiting to build on it. What was true after wasn't true before — the systems that describe agent connectivity could finally be connected, closing the gap between the agent record and everything that consumes it.</p>
+
+    <p class="stack-line"><strong>Stack:</strong> Mendix (eXp Enterprise) · Kafka · Tableau (via Data Services) · Jira</p>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>© 2026 Daniel C. Terwilliger</span>
+    <span><a href="mailto:daniel.terwil@gmail.com">daniel.terwil@gmail.com</a> · <a href="https://www.linkedin.com/in/danielterwil">LinkedIn</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
